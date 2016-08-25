@@ -14,7 +14,7 @@
 
   vSortable.install = function (Vue) {
     Vue.directive('sortable', function (el, binding) {
-      options = binding.value || {}
+      let options = binding.value || {}
 
       var sortable = new Sortable(el, options)
 
